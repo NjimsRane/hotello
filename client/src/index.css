@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--primary: #3a3138;
+	--secondary: #ffac41;
+}
+
+@layer base {
+	html {
+		font-size: 62.5%;
+	}
+
+	body {
+		font-family: roboto;
+	}
+	h1 {
+		@apply capitalize text-7xl text-white font-questrial;
+	}
+
+	h3 {
+		@apply text-white text-2xl uppercase my-8 tracking-widest font-questrial;
+	}
+}
