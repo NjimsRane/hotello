@@ -1,9 +1,9 @@
-import { FaPhone } from "react-icons/fa";
+import { FaPhone, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { logo } from "../assets";
-import { Menu } from "../components";
+import { LanguagesMenu, Menu } from "../components";
 
 const HamburgerMenu = () => {
 	const [isOpen, setisOpen] = useState(false);
@@ -15,7 +15,7 @@ const HamburgerMenu = () => {
 
 	return (
 		<div className="relative">
-			<div className="bg-primary p-12 flex justify-between items-center lg:bg-transparent lg:hidden">
+			<div className="bg-primary p-12 md:px-16 flex justify-between items-center lg:bg-transparent lg:hidden">
 				<Link to="/">
 					<img
 						src={logo}
@@ -82,12 +82,16 @@ const HamburgerMenu = () => {
 					</div>
 				</nav>
 			)}
-			<nav className="hidden lg:static lg:p-12 lg:flex lg:flex-col lg:gap-14 lg:bg-transparent lg:w-full lg:h-auto">
+			<nav className="hidden lg:static lg:p-12 lg:flex lg:flex-col lg:gap-14 lg:bg-transparent lg:w-full lg:h-auto lg:px-28">
 				<div className="flex items-center justify-between">
-					<p className="flex items-center gap-4 text-white text-xl">
-						<FaPhone />
-						<a href="tel:+31(0)20507000">+31 (0) 20 507 0000</a>
-					</p>
+					<div className="flex items-center gap-8">
+						<LanguagesMenu />
+						<div className="w-[0.06rem] h-14 bg-white/80"></div>
+						<p className="flex items-center gap-4 text-white  text-xl">
+							<FaPhone />
+							<a href="tel:+31(0)20507000">+31 (0) 20 507 0000</a>
+						</p>
+					</div>
 					<Link to="/">
 						<img
 							src={logo}
@@ -95,6 +99,43 @@ const HamburgerMenu = () => {
 							className="w-64"
 						/>
 					</Link>
+					<div className="flex items-center gap-8">
+						<p className="text-white/70 text-lg">
+							<sup className="text-3xl">.</sup>
+							<span className="ml-1">In New York</span>
+						</p>
+						<div className="w-[0.06rem] h-14 bg-white/80"></div>
+
+						<div className="flex items-center text-2xl gap-4 text-white ">
+							<a
+								href="https://www.facebook.com/"
+								rel="noopener noreferrer"
+								target="_blank"
+								aria-label="link to facebook page"
+								className="duration-500 transition-all hover:text-primary"
+							>
+								<FaFacebook />
+							</a>
+							<a
+								href="https://www.twitter.com/"
+								rel="noopener noreferrer"
+								target="_blank"
+								aria-label="link to twitter page"
+								className="duration-500 transition-all hover:text-primary"
+							>
+								<FaTwitter />
+							</a>
+							<a
+								href="https://www.instagram.com/"
+								rel="noopener noreferrer"
+								target="_blank"
+								aria-label="link to instagram page"
+								className="duration-500 transition-all hover:text-primary"
+							>
+								<FaInstagram />
+							</a>
+						</div>
+					</div>
 				</div>
 				<Menu />
 			</nav>

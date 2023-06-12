@@ -10,6 +10,7 @@
 @layer base {
 	html {
 		font-size: 62.5%;
+		scroll-behavior: smooth;
 	}
 
 	body {
@@ -18,7 +19,9 @@
 	h1 {
 		@apply capitalize text-7xl text-white font-questrial;
 	}
-
+	h2 {
+		@apply capitalize text-4xl font-questrial text-[#000];
+	}
 	h3 {
 		@apply text-white text-2xl uppercase my-8 tracking-widest font-questrial;
 	}

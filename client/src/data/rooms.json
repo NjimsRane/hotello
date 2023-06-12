@@ -1,0 +1,155 @@
+[
+	{
+		"id": 1,
+		"name": "deluxe black room",
+		"desc": "A spacious deluxe room which has a double bed and a single bed. Ideal for any Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed minus reprehenderit labore culpa officia quidem voluptatum dolorum necessitatibus facilis...",
+		"price": 70,
+		"size": 40,
+		"bed": 1,
+		"adults": 2,
+		"kids": 2,
+		"RoomImg": "/rooms/room1.jpg"
+	},
+	{
+		"id": 2,
+		"name": "Studio Broadway Room",
+		"desc": "Classic Rooms in the our Hotel have been refurbished to a very high standard. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed minus reprehenderit labore culpa officia quidem voluptatum dolorum necessitatibus facilis.",
+		"price": 50,
+		"size": 25,
+		"bed": 1,
+		"adults": 1,
+
+		"RoomImg": "/rooms/room2.png"
+	},
+	{
+		"id": 3,
+		"name": "Deluxe King Room",
+		"desc": "These luxury hotel rooms come with king size beds, views of the hotel's strik Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed minus reprehenderit labore culpa officia quidem voluptatum dolorum necessitatibus facilis....",
+		"price": 30,
+		"size": 75,
+		"bed": 1,
+		"adults": 3,
+		"kids": 2,
+		"RoomImg": "/rooms/room3.jpg"
+	},
+	{
+		"id": 4,
+		"name": "Standart  Single Room",
+		"desc": "Economy Single Room is well-furnished guest rooms 11 square meters with the m Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed minus reprehenderit labore culpa officia quidem voluptatum dolorum necessitatibus facilis....",
+		"price": 100,
+		"size": 50,
+		"bed": 1,
+		"adults": 2,
+		"kids": 1,
+		"RoomImg": "/rooms/room4.jpg"
+	},
+	{
+		"id": 5,
+		"name": "Standart Double Room",
+		"desc": "Furnished in classic and essential style, these comfortable rooms have balcon Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed minus reprehenderit labore culpa officia quidem voluptatum dolorum necessitatibus facilis....",
+		"price": 100,
+		"size": 50,
+		"bed": 1,
+		"adults": 2,
+		"kids": 1,
+		"RoomImg": "/rooms/room5.jpg"
+	},
+	{
+		"id": 6,
+		"name": "Deluxe Twin Room",
+		"desc": "Designed for practicality and comfort, these contemporary-styled rooms featur Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed minus reprehenderit labore culpa officia quidem voluptatum dolorum necessitatibus facilis....",
+		"price": 120,
+		"size": 70,
+		"bed": 1,
+		"adults": 2,
+		"kids": 2,
+		"RoomImg": "/rooms/room6.jpg"
+	},
+	{
+		"id": 7,
+		"name": "Studio Small Room",
+		"desc": "Create a division between your sleeping area and the rest of the space with rooms featur Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed minus reprehenderit labore culpa officia quidem voluptatum dolorum necessitatibus facilis....",
+		"price": 30,
+		"size": 75,
+		"bed": 1,
+		"adults": 3,
+		"kids": 2,
+		"RoomImg": "/rooms/room7.jpeg"
+	},
+	{
+		"id": 8,
+		"name": "Deluxe Yellow Room",
+		"desc": "Massive three bedroom, two full bathroom corner apartment located in a beauti rooms featur Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed minus reprehenderit labore culpa officia quidem voluptatum dolorum necessitatibus facilis....",
+		"price": 90,
+		"size": 40,
+		"bed": 1,
+		"adults": 2,
+		"kids": 2,
+		"RoomImg": "/rooms/room8.jpg"
+	},
+	{
+		"id": 9,
+		"name": "Standart Blue Room",
+		"desc": "This spacious 2 bed with large living room and Queen Size bedrooms boasts br contemporary-styled rooms featur Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed minus reprehenderit labore culpa officia quidem voluptatum dolorum necessitatibus facilis....",
+		"price": 120,
+		"size": 80,
+		"bed": 1,
+		"adults": 1,
+		"kids": 2,
+		"RoomImg": "/rooms/room9.png"
+	},
+	{
+		"id": 10,
+		"name": "Deluxe Twin Room",
+		"desc": "Designed for practicality and comfort, these contemporary-styled rooms featur Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed minus reprehenderit labore culpa officia quidem voluptatum dolorum necessitatibus facilis....",
+		"price": 90,
+		"size": 70,
+		"bed": 1,
+		"adults": 2,
+		"kids": 2,
+		"RoomImg": "/rooms/room10.png"
+	},
+	{
+		"id": 11,
+		"name": "Deluxe Contrast Room",
+		"desc": "Live at the historic Plaza Residences. Spacious and bright one Bedroom Home contemporary-styled rooms featur Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed minus reprehenderit labore culpa officia quidem voluptatum dolorum necessitatibus facilis....",
+		"price": 190,
+		"size": 76,
+		"bed": 1,
+		"adults": 2,
+		"kids": 2,
+		"RoomImg": "/rooms/room11.png"
+	},
+	{
+		"id": 12,
+		"name": "Studio Corporate Room",
+		"desc": "Designed for practicality and comfort, these contemporary-styled rooms featur Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed minus reprehenderit labore culpa officia quidem voluptatum dolorum necessitatibus facilis....",
+		"price": 190,
+		"size": 70,
+		"bed": 1,
+		"adults": 2,
+		"kids": 2,
+		"RoomImg": "/rooms/room12.png"
+	},
+	{
+		"id": 13,
+		"name": "Studio Room of Creativity",
+		"desc": "Designed for practicality and comfort, these contemporary-styled rooms featur Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed minus reprehenderit labore culpa officia quidem voluptatum dolorum necessitatibus facilis....",
+		"price": 190,
+		"size": 75,
+		"bed": 1,
+		"adults": 6,
+		"RoomImg": "/rooms/room13.png"
+	},
+	{
+		"id": 14,
+		"name": "Studio Small Kids Room",
+		"desc": "Kit out your kids room for less with our affordable children's furniture. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed minus reprehenderit labore culpa officia quidem voluptatum dolorum necessitatibus facilis....",
+		"price": 30,
+		"size": 75,
+		"bed": 1,
+		"adults": 2,
+		"kids": 4,
+		"RoomImg": "/rooms/room14.png"
+	}
+]
