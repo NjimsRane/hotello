@@ -1,9 +1,13 @@
 import { Room } from "../components";
 import { Header } from "../layouts";
 import rooms from "../data/rooms.json";
-// import { useState } from "react";
+import { useEffect } from "react";
 
 const Rooms = () => {
+	useEffect(() => {
+		document.title = "Rooms | Hotello";
+	}, []);
+
 	return (
 		<div>
 			<Header title="rooms" />
@@ -11,7 +15,7 @@ const Rooms = () => {
 				<div>
 					<div></div>
 					<div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-						{rooms.map(room => (
+						{rooms.map((room) => (
 							<Room
 								key={room.id}
 								roomName={room.name}
