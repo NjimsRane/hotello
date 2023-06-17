@@ -10,7 +10,9 @@ const Gallery = lazy(() => import("./pages/Gallery"));
 const About = lazy(() => import("./pages/About"));
 const News = lazy(() => import("./pages/News"));
 const Rooms = lazy(() => import("./pages/Rooms"));
+const RoomDetails = lazy(() => import("./pages/RoomDetails"));
 const Services = lazy(() => import("./pages/Services"));
+const ServicesDetails = lazy(() => import("./pages/ServicesDetails"));
 
 const Layout = () => {
 	return (
@@ -53,12 +55,20 @@ const App = () => {
 					element={<Services />}
 				/>
 				<Route
+					path="/services/:id"
+					element={<ServicesDetails />}
+				/>
+				<Route
 					path="/gallery"
 					element={<Gallery />}
 				/>
 				<Route
 					path="/rooms"
 					element={<Rooms />}
+				/>
+				<Route
+					path="/rooms/:id"
+					element={<RoomDetails />}
 				/>
 			</Route>
 		</Routes>

@@ -15,6 +15,7 @@ const Services = () => {
 				{dataServices.map((service) => (
 					<Service
 						key={service.id}
+						id={service.id}
 						serviceImg={service.urlImg}
 						servicePrice={service.price}
 						serviceName={service.title}

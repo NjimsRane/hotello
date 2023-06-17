@@ -12,10 +12,10 @@ const Header = ({ title }: HearderProps) => {
 			<div
 				className="absolute top-0 h-full w-full z-[-1] bg-center bg-cover bg-no-repeat flex justify-center items-center"
 				style={{
-					backgroundImage: `linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(${room1})`,
+					backgroundImage: `linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url(${room1})`,
 				}}
 			></div>
-			<h1 className="absolute top-[60%] left-[50%] translate-x-[-50%]">
+			<h1 className="absolute top-[60%] text-center left-[50%] translate-x-[-50%]">
 				{title}
 			</h1>
 		</header>

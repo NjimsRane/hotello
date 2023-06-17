@@ -48,7 +48,7 @@ const HamburgerMenu = () => {
 				</button>
 			</div>
 			{isOpen ? (
-				<nav className="flex flex-col gap-4 bg-primary w-[50%] h-screen top-0 transition-transform duration-500 translate-x-0 p-12 absolute z-10 lg:hidden">
+				<nav className="flex flex-col gap-4 bg-primary w-[70%] h-screen top-0 transition-transform duration-500 translate-x-0 p-12 absolute z-10 lg:hidden">
 					<p className="flex items-center gap-4 text-white text-xl">
 						<FaPhone />
 						<a href="tel:+31(0)20507000">+31 (0) 20 507 0000</a>
@@ -65,7 +65,7 @@ const HamburgerMenu = () => {
 					</div>
 				</nav>
 			) : (
-				<nav className="flex flex-col gap-4 bg-primary w-[50%] h-screen top-0 transition-transform duration-500 -translate-x-[100%] p-12 absolute z-10 lg:hidden">
+				<nav className="flex flex-col gap-4 bg-primary w-[70%] h-screen top-0 transition-transform duration-500 -translate-x-[100%] p-12 absolute z-10 lg:hidden">
 					<p className="flex items-center gap-4 text-white text-xl">
 						<FaPhone />
 						<a href="tel:+31(0)20507000">+31 (0) 20 507 0000</a>
