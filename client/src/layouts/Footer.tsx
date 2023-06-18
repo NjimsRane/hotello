@@ -1,17 +1,41 @@
 import { gal1, logo, gal3, gal2, gal4, gal5, gal6 } from "../assets";
 import { BiSend } from "react-icons/bi";
 import { AiFillHeart } from "react-icons/ai";
+import { NavLink } from "react-router-dom";
+
+const gals = [
+	{
+		imgUrl: gal1,
+	},
+	{
+		imgUrl: gal2,
+	},
+	{
+		imgUrl: gal3,
+	},
+	{
+		imgUrl: gal4,
+	},
+	{
+		imgUrl: gal5,
+	},
+	{
+		imgUrl: gal6,
+	},
+];
 
 const Footer = () => {
 	return (
 		<footer className="bg-primary p-12  md:px-16 lg:px-28">
 			<div className="flex flex-col lg:flex-row gap-8">
 				<div className="space-y-8 flex-1">
-					<img
-						src={logo}
-						alt="logo"
-						className="w-64"
-					/>
+					<NavLink to="/">
+						<img
+							src={logo}
+							alt="logo"
+							className="w-64"
+						/>
+					</NavLink>
 
 					<p className="text-[#FFFFFF]/50 text-2xl leading-relaxed  md:w-[35ch]">
 						We always strive for growth and development as
@@ -23,36 +47,14 @@ const Footer = () => {
 				<div className="flex-1">
 					<h3>gallery</h3>
 					<div className="grid gap-4 grid-cols-2  md:grid-cols-3">
-						<img
-							src={gal1}
-							alt="room"
-							className="w-[20rem] h-[20vh] lg:h-[10vh] object-cover"
-						/>
-						<img
-							src={gal2}
-							alt="room"
-							className="w-[20rem] h-[20vh] lg:h-[10vh] object-cover"
-						/>
-						<img
-							src={gal3}
-							alt="room"
-							className="w-[20rem] h-[20vh] lg:h-[10vh] object-cover"
-						/>
-						<img
-							src={gal4}
-							alt="room"
-							className="w-[20rem] h-[20vh] lg:h-[10vh] object-cover"
-						/>
-						<img
-							src={gal5}
-							alt="room"
-							className="w-[20rem] h-[20vh] lg:h-[10vh] object-cover"
-						/>
-						<img
-							src={gal6}
-							alt="room"
-							className="w-[20rem] h-[20vh] lg:h-[10vh] object-cover"
-						/>
+						{gals.map((item, index) => (
+							<img
+								src={item.imgUrl}
+								key={index}
+								alt="room"
+								className="w-[20rem] h-[20vh] lg:h-[10vh] object-cover"
+							/>
+						))}
 					</div>
 				</div>
 				<div className="flex-1">

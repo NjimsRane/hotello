@@ -1,11 +1,11 @@
-import { useEffect } from "react";
+import { HamburgerMenu } from "../components";
 
 const Home = () => {
-	useEffect(() => {
-		document.title = "Home | Hotello";
-	}, []);
-
-	return <div>Home</div>;
+	return (
+		<div>
+			<HamburgerMenu />
+		</div>
+	);
 };
 
 export default Home;

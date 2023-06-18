@@ -24,8 +24,9 @@ const HamburgerMenu = () => {
 					/>
 				</Link>
 
-				<button
+				<div
 					className="space-y-2 cursor-pointer"
+					aria-label="hamburger menu toggle"
 					onClick={handleClick}
 				>
 					<span
@@ -45,7 +46,7 @@ const HamburgerMenu = () => {
 								: "translate-y-0"
 						}`}
 					></span>
-				</button>
+				</div>
 			</div>
 			{isOpen ? (
 				<nav className="flex flex-col gap-4 bg-primary w-[70%] h-screen top-0 transition-transform duration-500 translate-x-0 p-12 absolute z-10 lg:hidden">
@@ -82,7 +83,7 @@ const HamburgerMenu = () => {
 					</div>
 				</nav>
 			)}
-			<nav className="hidden lg:static lg:p-12 lg:flex lg:flex-col lg:gap-14 lg:bg-transparent lg:w-full lg:h-auto lg:px-28">
+			<nav className="hidden lg:static lg:p-12 lg:flex lg:flex-col lg:gap-14 lg:w-full lg:h-auto lg:px-28">
 				<div className="flex items-center justify-between">
 					<div className="flex items-center gap-8">
 						<LanguagesMenu />

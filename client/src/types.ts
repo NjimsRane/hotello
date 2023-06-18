@@ -15,9 +15,7 @@ export type ServiceProps = {
 };
 
 export interface IRoom extends HotelloProps {
-	adults: number;
-	kids?: number;
-	bed: number;
+	maxPerson: number;
 	size: number;
 }
 

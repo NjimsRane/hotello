@@ -18,12 +18,18 @@
 		font-family: roboto;
 	}
 	h1 {
-		@apply capitalize text-7xl text-white font-questrial;
+		@apply capitalize text-5xl text-white font-questrial font-bold;
 	}
 	h2 {
-		@apply capitalize text-4xl font-questrial text-[#000];
+		@apply capitalize text-4xl font-questrial text-[#000] font-semibold;
 	}
 	h3 {
 		@apply text-white text-2xl uppercase my-8 tracking-widest font-questrial;
+	}
+
+	@media screen and (min-width: 712px) {
+		h1 {
+			@apply text-7xl;
+		}
 	}
 }

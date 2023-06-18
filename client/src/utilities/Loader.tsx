@@ -1,16 +1,11 @@
-import ClipLoader from "react-spinners/ClipLoader";
+import { SpinnerDotted } from "spinners-react";
 
 const Loader = () => {
 	return (
-		<div
-			className="fixed h-screen w-full top-0 left-0 flex justify-center items-center"
-			style={{
-				background: "rgba(58, 49, 56, 0.718)",
-			}}
-		>
-			<ClipLoader
+		<div className="fixed h-screen w-full top-0 bottom-0 flex justify-center items-center bg-[#3a3138]/90 ">
+			<SpinnerDotted
 				color="white"
-				size={100}
+				size={50}
 				aria-label="Loading Spinner"
 				data-testid="loader"
 			/>

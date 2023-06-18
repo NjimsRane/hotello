@@ -1,7 +1,7 @@
 import { formatCurrency } from "../utilities/formatCurrency";
 import { ImagesProps, PriceProps, DescProps } from "../types";
 
-export const Images = ({ url, desc }: ImagesProps) => {
+export const HotelloImages = ({ url, desc }: ImagesProps) => {
 	return (
 		<div className="overflow-hidden">
 			<img
@@ -13,7 +13,7 @@ export const Images = ({ url, desc }: ImagesProps) => {
 	);
 };
 
-export const Price = ({ price }: PriceProps) => {
+export const HotelloPrice = ({ price }: PriceProps) => {
 	return (
 		<span className="text-3xl text-white font-semibold capitalize">
 			{price ? <span>{formatCurrency(price)}</span> : <span>free</span>}
@@ -21,7 +21,7 @@ export const Price = ({ price }: PriceProps) => {
 	);
 };
 
-export const Desc = ({ desc }: DescProps) => {
+export const HotelloDesc = ({ desc }: DescProps) => {
 	return <p className="text-lg text-[gray]">{desc.slice(0, 200)}...</p>;
 };
 
