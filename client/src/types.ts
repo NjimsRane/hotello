@@ -8,11 +8,15 @@ export type HotelloProps = {
 
 export type ServiceProps = {
 	id: number;
-	serviceImg?: string;
-	serviceName: string;
-	servicePrice?: number;
-	serviceDesc: string;
+	urlImg?: string;
+	title: string;
+	price?: number;
+	desc: string;
 };
+
+export interface ServiceDetailsProps extends ServiceProps {
+	subtitle?: string;
+}
 
 export interface IRoom extends HotelloProps {
 	maxPerson: number;

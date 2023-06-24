@@ -16,10 +16,10 @@ const Services = () => {
 					<Service
 						key={service.id}
 						id={service.id}
-						serviceImg={service.urlImg}
-						servicePrice={service.price}
-						serviceName={service.title}
-						serviceDesc={service.desc}
+						urlImg={service.urlImg}
+						price={service.price}
+						title={service.title}
+						desc={service.desc}
 					/>
 				))}
 			</div>

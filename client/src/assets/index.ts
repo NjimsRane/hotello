@@ -14,6 +14,7 @@ export { default as roomService } from "./images/services/roomService.jpg";
 export { default as safe } from "./images/services/safe.jpg";
 export { default as spa } from "./images/services/spa.jpg";
 export { default as transfert } from "./images/services/transfert.jpg";
+export { default as pat } from "./pat.png";
 
 // News
 export { default as bar } from "./images/news/bar.jpeg";
