@@ -3,6 +3,7 @@ export { default as Room } from "./Room";
 export { default as LanguagesMenu } from "./LanguagesMenu";
 export { default as Menu } from "./Menu";
 export { default as Service } from "./Service";
+export { default as SDetail } from "./ServiceDetail";
 export { default as BookingForm } from "./BookingForm";
 export { default as AdultDropDown } from "./AdultDropDown";
 export { default as KidsDropDown } from "./KidsDropDown";

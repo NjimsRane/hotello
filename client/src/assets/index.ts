@@ -16,6 +16,13 @@ export { default as spa } from "./images/services/spa.jpg";
 export { default as transfert } from "./images/services/transfert.jpg";
 export { default as pat } from "./pat.png";
 
+// SERVICES DETAILS
+
+export { default as s1 } from "./images/serviceDetail/s1.jpg";
+export { default as s2 } from "./images/serviceDetail/s2.jpg";
+export { default as s3 } from "./images/serviceDetail/s3.jpeg";
+export { default as s4 } from "./images/serviceDetail/s4.jpeg";
+
 // News
 export { default as bar } from "./images/news/bar.jpeg";
 export { default as coffee } from "./images/news/coffee.jpg";

@@ -1,9 +1,42 @@
 import { useParams } from "react-router-dom";
 import { Header } from "../layouts";
 import { dataServices } from "../data/dataServices";
-import { pat } from "../assets";
+import { pat, s3, s4 } from "../assets";
 // import { ServiceDetailsProps } from "../types";
-import { FaCheck } from "react-icons/fa";
+import { Choices } from "../components/ServiceDetail";
+
+import { s1, s2 } from "../assets";
+import { SDetail } from "../components";
+import { FaRegCalendarAlt } from "react-icons/fa";
+import { IoMdRestaurant, IoIosFitness } from "react-icons/io";
+import {
+	MdRoomService,
+	MdSportsGymnastics,
+	MdLocalLaundryService,
+} from "react-icons/md";
+
+import { BiSpa } from "react-icons/bi";
+
+import { FaWifi, FaSwimmingPool, FaCocktail, FaCheck } from "react-icons/fa";
+
+const serviceDetails = [
+	{
+		desc: "All the guests can celebrate a special occasion or just aft Lorem ipsum,",
+		check: <FaCheck />,
+	},
+	{
+		desc: "Lorem ipsum dolor sit amet consectetur,adipisicing elit. Commodi, fugit.",
+		check: <FaCheck />,
+	},
+	{
+		desc: "All the guests can celebrate a special occasion or just aft Lorem ipsum,",
+		check: <FaCheck />,
+	},
+	{
+		desc: "Lorem ipsum dolor sit amet consectetur,adipisicing elit. Commodi, fugit.",
+		check: <FaCheck />,
+	},
+];
 
 const ServicesDetails = () => {
 	const { id } = useParams();
@@ -34,7 +67,6 @@ const ServicesDetails = () => {
 				<div className="space-y-4 flex-1">
 					<div className="space-y-6 lg:w-[80ch]">
 						<h3 className="text-primary text-center">{subtitle}</h3>
-
 						<p className="text-xl tracking-wide leading-normal text-gray-500">
 							{desc}
 						</p>
@@ -44,43 +76,84 @@ const ServicesDetails = () => {
 						<h4 className="uppercase text-primary text-xl tracking-wider mt-10">
 							service details
 						</h4>
-						<p className=" flex items-center gap-4">
-							<span className="h-6 w-6 border border-secondary rounded-full grid place-items-center">
-								<FaCheck className="text-secondary" />
-							</span>
-							<span className="text-xl text-gray-500">
-								Lorem ipsum dolor sit amet consectetur,
-								adipisicing elit. Commodi, fugit.
-							</span>
-						</p>
-						<p className=" flex items-center gap-4">
-							<span className="h-6 w-6 border border-secondary rounded-full grid place-items-center">
-								<FaCheck className="text-secondary" />
-							</span>
-							<span className="text-xl text-gray-500">
-								Lorem ipsum dolor sit amet consectetur,
-								adipisicing elit. Commodi, fugit.
-							</span>
-						</p>
-						<p className=" flex items-center gap-4">
-							<span className="h-6 w-6 border border-secondary rounded-full grid place-items-center">
-								<FaCheck className="text-secondary" />
-							</span>
-							<span className="text-xl text-gray-500">
-								Lorem ipsum dolor sit amet consectetur,
-								adipisicing elit. Commodi, fugit.
-							</span>
-						</p>
-						<p className=" flex items-center gap-4">
-							<span className="h-6 w-6 border border-secondary rounded-full grid place-items-center">
-								<FaCheck className="text-secondary" />
-							</span>
-							<span className="text-xl text-gray-500">
-								Lorem ipsum dolor sit amet consectetur,
-								adipisicing elit. Commodi, fugit.
-							</span>
-						</p>
+						{serviceDetails.map((detail, index) => (
+							<p
+								key={index}
+								className=" flex items-center gap-4"
+							>
+								<span className="h-6 w-6 border border-secondary rounded-full grid place-items-center text-secondary">
+									{detail.check}
+								</span>
+								<span className="text-xl text-gray-500">
+									{detail.desc}
+								</span>
+							</p>
+						))}
 					</div>
+				</div>
+			</div>
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-8">
+				<SDetail
+					urlImg={s1}
+					desc="24h room service"
+					icon={<MdRoomService />}
+				/>
+				<SDetail
+					urlImg={s2}
+					desc="restaurant and bars"
+					icon={<IoMdRestaurant />}
+				/>
+				<SDetail
+					urlImg={s3}
+					desc="events and meetings"
+					icon={<FaRegCalendarAlt />}
+				/>
+				<SDetail
+					urlImg={s4}
+					desc="fitness and spa"
+					icon={<MdSportsGymnastics />}
+				/>
+			</div>
+			<div className="my-10 p-12 md:px-32 mx-auto">
+				<h2 className="text-primary text-center">why choose us?</h2>
+				<p className="text-gray-600 text-lg text-center md:w-[50ch] mx-auto my-6">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Nobis reiciendis fuga earum quod fugiat temporibus esse,
+					perferendis a deleniti? Non?
+				</p>
+				<div className="my-8 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 place-items-center">
+					<Choices
+						choice={<FaWifi />}
+						title="internet"
+					/>
+					<Choices
+						choice={<FaCocktail />}
+						title="drinks"
+					/>
+					<Choices
+						choice={<MdRoomService />}
+						title="concierge"
+					/>
+					<Choices
+						choice={<FaSwimmingPool />}
+						title="pool"
+					/>
+					<Choices
+						choice={<IoIosFitness />}
+						title="fitness"
+					/>
+					<Choices
+						choice={<MdLocalLaundryService />}
+						title="laundry"
+					/>
+					<Choices
+						choice={<IoMdRestaurant />}
+						title="restaurant"
+					/>
+					<Choices
+						choice={<BiSpa />}
+						title="spa"
+					/>
 				</div>
 			</div>
 		</section>
